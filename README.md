@@ -63,8 +63,8 @@ Real-time vehicle management/
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/yourusername/vehicle-management.git
-cd vehicle-management
+git clone https://github.com/Oluwat-dev/Real-time-Vehicle-Management.git
+cd Real-time-Vehicle-Management
 ```
 
 2. **Set up the backend**
@@ -91,13 +91,7 @@ pip install -r requirements.txt
 python detection.py
 ```
 
----
 
-## 📂 Reports
-
-All generated vehicle data and analytics can be exported and found in the `reports/` folder.
-
----
 
 ## ✅ Testing
 
