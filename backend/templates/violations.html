@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Violations</title>
+ <style>
+  body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background: url('static/images/myhc.jpg') no-repeat center center fixed;
+   background-size: cover;
+   color: #343a40;
+   position: relative;
+  }
+
+  .home-link {
+   position: absolute;
+   top: 20px;
+   left: 20px;
+   font-size: 18px;
+   font-weight: bold;
+   color: #ffffff;
+   text-decoration: none;
+   background: rgba(0, 0, 0, 0.6);
+   padding: 5px 10px;
+   border-radius: 5px;
+  }
+
+  .home-link:hover {
+   text-decoration: underline;
+   background: rgba(0, 0, 0, 0.8);
+  }
+
+  .container {
+   width: 80%;
+   margin: 50px auto;
+   background: rgba(255, 255, 255, 0.9);
+   padding: 20px;
+   border-radius: 10px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  h1 {
+   text-align: center;
+   color: #007bff;
+  }
+
+  table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-top: 20px;
+  }
+
+  th,
+  td {
+   border: 1px solid #ddd;
+   padding: 10px;
+   text-align: left;
+  }
+
+  th {
+   background-color: #007bff;
+   color: #fff;
+  }
+
+  tr:nth-child(even) {
+   background-color: #f2f2f2;
+  }
+ </style>
+ <!-- Favicon -->
+ <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+</head>
+
+<body>
+ <!-- Home link placed at the top-left corner -->
+ <a href="/" class="home-link">Home</a>
+
+ <div class="container">
+  <h1>Recorded Violations</h1>
+  <table>
+   <thead>
+    <tr>
+     <th>ID</th>
+     <th>Plate Number</th>
+     <th>Location</th>
+     <th>Time</th>
+    </tr>
+   </thead>
+   <tbody>
+    {% for violation in violations %}
+    <tr>
+     <td>{{ violation.id }}</td>
+     <td>{{ violation.plate_number }}</td>
+     <td>{{ violation.location }}</td>
+     <td>{{ violation.time }}</td>
+    </tr>
+    {% endfor %}
+   </tbody>
+  </table>
+ </div>
+</body>
+
+</html>

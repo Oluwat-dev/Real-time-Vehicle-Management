@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Register</title>
+ <style>
+  body {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   background: url("static/images/myhc.jpg") no-repeat center center fixed;
+   background-size: cover;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   position: relative;
+  }
+
+  .home-link {
+   position: absolute;
+   top: 20px;
+   left: 20px;
+   font-size: 18px;
+   font-weight: bold;
+   color: #4caf50;
+   text-decoration: none;
+   background: rgba(255, 255, 255, 0.7);
+   padding: 5px 10px;
+   border-radius: 5px;
+  }
+
+  .home-link:hover {
+   text-decoration: underline;
+  }
+
+  .form-container {
+   background-color: rgba(255, 255, 255, 0.9);
+   /* Semi-transparent white */
+   padding: 30px;
+   border-radius: 10px;
+   width: 400px;
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  h2 {
+   color: #4caf50;
+   text-align: center;
+   margin-bottom: 20px;
+  }
+
+  label {
+   font-weight: bold;
+   display: block;
+   margin-top: 10px;
+  }
+
+  input {
+   padding: 8px;
+   margin: 10px 0;
+   width: 100%;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+  }
+
+  button {
+   width: 100%;
+   padding: 10px;
+   background-color: #4caf50;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+  }
+
+  button:hover {
+   background-color: #43a047;
+  }
+
+  .form-footer {
+   text-align: center;
+   margin-top: 20px;
+  }
+
+  .form-footer a {
+   text-decoration: none;
+   color: #4caf50;
+  }
+ </style>
+ <!-- Favicon -->
+ <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+</head>
+
+<body>
+ <!-- Home link placed at the top-left corner -->
+ <a href="/" class="home-link">Home</a>
+
+ <div class="form-container">
+  <h2>Register</h2>
+  <form method="POST">
+   <!-- Full Name -->
+   <label for="name">Full Name:</label>
+   <input type="text" id="name" name="name" required>
+
+   <!-- Address -->
+   <label for="address">Address:</label>
+   <input type="text" id="address" name="address" required>
+
+   <!-- Date of Birth -->
+   <label for="dob">Date of Birth:</label>
+   <input type="date" id="dob" name="dob" required>
+
+   <!-- Username -->
+   <label for="username">Username:</label>
+   <input type="text" id="username" name="username" required>
+
+   <!-- Email -->
+   <label for="email">Email:</label>
+   <input type="email" id="email" name="email" required>
+
+   <!-- Password -->
+   <label for="password">Password:</label>
+   <input type="password" id="password" name="password" required>
+
+   <!-- Submit Button -->
+   <button type="submit">Register</button>
+  </form>
+
+  <div class="form-footer">
+   <p>Already have an account? <a href="#">Login here</a></p>
+  </div>
+ </div>
+</body>
+
+</html>

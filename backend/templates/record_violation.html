@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Record Violation</title>
+ <style>
+  body {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   background: url('static/images/phenix_building.jpg') no-repeat center center fixed;
+   background-size: cover;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   color: #333;
+  }
+
+  .home-link {
+   position: absolute;
+   top: 20px;
+   left: 20px;
+   font-size: 18px;
+   font-weight: bold;
+   color: #007bff;
+   text-decoration: none;
+   background: rgba(255, 255, 255, 0.7);
+   padding: 5px 10px;
+   border-radius: 5px;
+  }
+
+  .home-link:hover {
+   text-decoration: underline;
+  }
+
+  .form-container {
+   background-color: rgba(255, 255, 255, 0.9);
+   padding: 30px;
+   border-radius: 10px;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+   width: 400px;
+  }
+
+  h2 {
+   color: #333;
+   text-align: center;
+   margin-bottom: 20px;
+  }
+
+  form {
+   display: flex;
+   flex-direction: column;
+  }
+
+  label {
+   margin-bottom: 5px;
+   font-weight: bold;
+  }
+
+  input {
+   padding: 10px;
+   margin-bottom: 15px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+  }
+
+  button {
+   padding: 10px;
+   border: none;
+   border-radius: 5px;
+   background-color: #007bff;
+   color: #fff;
+   font-size: 16px;
+   cursor: pointer;
+  }
+
+  button:hover {
+   background-color: #0056b3;
+  }
+ </style>
+ <!-- Favicon -->
+ <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+</head>
+
+<body>
+ <!-- Home link -->
+ <a href="/" class="home-link">Home</a>
+
+ <div class="form-container">
+  <h2>Record a Violation</h2>
+  <form method="POST">
+   <label for="plate_number">Plate Number:</label>
+   <input type="text" id="plate_number" name="plate_number" required>
+
+   <label for="speed">Speed:</label>
+   <input type="text" id="speed" name="speed" required>
+
+   <label for="location">Location:</label>
+   <input type="text" id="location" name="location" required>
+
+   <label for="time">Time:</label>
+   <input type="datetime-local" id="time" name="time" required>
+
+   <button type="submit">Submit</button>
+  </form>
+ </div>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+smart_city/
+│
+├── backend/
+│   ├── app.py                 # Flask application
+│   ├── models.py              # Database models and ORM
+│   ├── routes.py              # API routes
+│   ├── database.py            # Database connection and initialization
+│   ├── analytics.py           # Data analytics functions
+│   └── requirements.txt        # Python package dependencies
+│
+├── frontend/
+│   ├── app.py                 # Dash application
+│   ├── layout.py              # Layout and UI components
+│   ├── callbacks.py           # Callback functions for interactivity
+│   └── assets/
+│       └── styles.css         # CSS for styling
+│
+├── detection/
+│   ├── detection.py           # YOLOv8 vehicle detection script
+│   ├── ocr.py                 # License plate recognition script
+│   └── requirements.txt        # Dependencies for detection
+│
+├── reports/                   # Exported reports
+├── tests/                     # Unit tests
+└── README.md                  # Documentation

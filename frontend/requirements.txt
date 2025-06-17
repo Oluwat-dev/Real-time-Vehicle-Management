@@ -1,0 +1,12 @@
+Steps to Run the Frontend
+Ensure Backend is Running: Before starting the frontend, make sure that the Flask backend is running and serving at http://localhost:5000.
+
+Install Required Libraries: Make sure you have Dash and its dependencies installed.
+
+Install Required Libraries: Make sure you have Dash and its dependencies installed.
+  pip install dash plotly pandas requests
+
+Run the Frontend: From the frontend/ directory, run the Dash app.
+    python app.py
+
+View the Application: Open your browser and go to http://127.0.0.1:8050/ to see the frontend.
