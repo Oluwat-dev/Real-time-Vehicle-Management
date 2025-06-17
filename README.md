@@ -54,7 +54,7 @@ Real-time vehicle management/
 - **Frontend:** Dash (Plotly), CSS
 - **Detection:** YOLOv8, OpenCV, Tesseract OCR
 - **Database:** SQLite / PostgreSQL (configurable)
-- **Others:** Pandas, Numpy, Gunicorn, Docker (optional)
+- **Others:** Pandas, Numpy, Gunicorn, Docker 
 
 ---
 
